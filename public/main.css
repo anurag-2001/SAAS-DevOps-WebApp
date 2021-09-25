@@ -4,7 +4,7 @@ body, .tooltip
 }
 
 .header-bar {
-  background-color: #2366DC;
+  background-color: #292929;
 }
 
 .container--narrow {
@@ -60,12 +60,12 @@ body, .tooltip
 .input-dark {
   background-color: #444;
   border-color: transparent;
-  color: #131212;
+  color: #FFFFFF;
 }
 
 .input-dark:focus {
-  color: #080808;
-  /* background-color: #555; */
+  color: #FFFFFF;
+  background-color: #555;
   border-color: #80bdff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
@@ -366,8 +366,4 @@ textarea.tall-textarea {
   border: none;
   outline: none;
   font-size: .75rem;
-}
-
-.yoyo{
-  background-color: white;
 }
