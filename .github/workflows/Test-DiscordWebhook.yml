@@ -1,0 +1,29 @@
+name: Test Discord webhook
+
+on: push
+
+jobs:
+  DiscWebHook:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Discord WebHook Test
+        uses: sarisia/actions-status-discord@v1
+        if: always()
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        with:
+          nodetail: true
+          title: "Here we go"
+          color: 0xff91a4
+
+
+    # - name: ZAP scan 
+      # run: script/zap-script.sh
+      # 
+    # - name: Archive production artifacts
+      # uses: actions/upload-artifact@v2
+      # with:
+        # name: zap report
+        # path: |
+          # ./zap_baseline_report.html    
