@@ -1,0 +1,16 @@
+name: Analyze code statically
+
+on: push
+
+jobs:
+  jshint-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install JShint
+        run: npm install -g jshint && sudo ln -s /usr/bin/nodejs /usr/bin/node
+      - name: Check with JShint
+        run: |
+          find . -name 'test.js' -type f -print | \
+            xargs jshint
