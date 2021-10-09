@@ -14,6 +14,6 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         with:
           nodetail: true
-          title: "Here we go"
+          title: "Test test testing Discord webhook"
           color: 0xff91a4
 
