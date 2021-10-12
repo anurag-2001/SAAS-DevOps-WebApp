@@ -1,0 +1,16 @@
+name: Test Discord webhook
+
+on: push
+
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      
+    - name: Zap Scan
+      uses: zaproxy/action-baseline@v0.6.1
+      with:
+        target: 'https://spike-saas.herokuapp.com/'
+
