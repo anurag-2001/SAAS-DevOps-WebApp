@@ -6,7 +6,10 @@ jobs:
   zap_scan:
     runs-on: ubuntu-latest
 
-    steps:    
+    steps: 
+    
+    - uses: actions/checkout@v2
+   
     - name: Owasp Zap Scan
       run: ./scripts/owasp-zapx.sh
       
