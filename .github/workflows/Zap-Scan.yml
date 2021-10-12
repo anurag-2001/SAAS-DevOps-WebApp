@@ -1,0 +1,23 @@
+name: Zap Scan
+
+on: push
+
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+
+    steps: 
+    
+    - uses: actions/checkout@v2
+   
+    - name: Owasp Zap Scan
+      run: ./scripts/owasp-zapx.sh
+      
+    - name: Archive generated report artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: Zap report
+        path: |
+          ./zap_report.html
+
+
