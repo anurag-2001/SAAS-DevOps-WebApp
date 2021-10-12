@@ -1,4 +1,4 @@
-name: Test Discord webhook
+name: Zap Scan
 
 on: push
 
