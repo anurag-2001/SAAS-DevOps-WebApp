@@ -1,3 +1,3 @@
-# Mini_Project-1
+# Mini_Project
  
 Focused on DevOps based Software Deployment
