@@ -1,11 +1,11 @@
 body, .tooltip
  {
   font-family: 'Open Sans', sans-serif;
-  background-color: #85f3be;
+  background-color: white;
 }
 
 .header-bar {
-  background-color: #13ef8f;
+  background-color: black;
 }
 
 .container--narrow {
